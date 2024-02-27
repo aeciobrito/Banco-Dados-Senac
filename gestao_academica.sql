@@ -66,7 +66,7 @@ INSERT INTO Aluno (Nome, Cpf) VALUES
 	('Carlos Silva', '12345678901'),
     ('Pedro Rocha', '23456789012'),
     ('Monica Souza', '34567890123'),
-    ('Fabio Silva', '45678901234');
+    ('Fabio Silva', '45678901234'),
     ('Ana Oliveira', '56789012345'),
     ('Lucas Santos', '67890123456'),
     ('Eduarda Lima', '78901234567'),
@@ -77,7 +77,7 @@ INSERT INTO Curso (Nome) VALUES
     ('Engenharia Civil'),
     ('Administração'),
     ('Medicina'),
-    ('Arquitetura');
+    ('Arquitetura'),
     ('Psicologia'),
     ('Engenharia Elétrica'),
     ('Direito'),
@@ -90,20 +90,19 @@ INSERT INTO Matricula(Aluno_ID, Curso_ID, DataMatricula) VALUES
     (2, 2, '2024-01-02'),
     (2, 5, '2024-02-01'),
     (3, 2, '2024-01-15'),
-    (3, 5, '2024-01-29');
+    (3, 5, '2024-01-29'),
     (4, 4, '2024-03-10'),
     (3, 1, '2024-02-18'),
     (4, 2, '2024-01-25'),
     (1, 3, '2024-03-01'),
-    (2, 4, '2024-02-12'),
-    (3, 5, '2024-01-20')
+    (2, 4, '2024-02-12');
     
 INSERT INTO Professor (Nome, Especializacao) VALUES
 	('Huguinho', 'Tecnologia'),
     ('Zezinho', 'Idiomas'),
     ('Luizinho', 'Cálculo'),
     ('Tico', 'Tecnologia'),
-    ('Teco', 'Idiomas');
+    ('Teco', 'Idiomas'),
     ('Carla Mendes', 'Psicologia'),
     ('Vinícius Almeida', 'Engenharia Elétrica'),
     ('Camila Oliveira', 'Direito'),
@@ -113,7 +112,7 @@ INSERT INTO Professor (Nome, Especializacao) VALUES
 INSERT INTO Disciplina (Nome, Horas) VALUES
 	('Matemática "Avançada" II', 40),
     ('Inglês Técnico', 50),
-    ('Linguagem de Programação', 45);
+    ('Linguagem de Programação', 45),
     ('Psicologia Social', 30),
     ('Sistemas Elétricos', 60),
     ('Direito Civil', 45),
@@ -125,7 +124,7 @@ INSERT INTO Professores_Disciplinas (Professor_ID, Disciplina_ID) VALUES
     (2, 2),
     (3, 3),
     (4, 1),
-    (5, 2);
+    (5, 2),
     (6, 4),
     (7, 5),
     (8, 1),
@@ -135,9 +134,6 @@ INSERT INTO Professores_Disciplinas (Professor_ID, Disciplina_ID) VALUES
 INSERT INTO Disciplinas_Cursos(Disciplina_ID, Curso_ID) VALUES
 	(1, 1),
     (2, 2),
-    (3, 3);
+    (3, 3),
     (4, 4),
-    (5, 5),
-    (1, 1),
-    (2, 2),
-    (3, 3);
+    (5, 5);
