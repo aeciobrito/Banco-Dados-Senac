@@ -28,5 +28,11 @@ WHERE ID = 5;
 UPDATE CIDADE
 SET Prefeito_ID = 3
 WHERE Estado_ID = 2 AND ID = 3;
-    
-    
+
+-- Exibir o nome da cidade e o nome do prefeito
+SELECT CIDADE.Nome AS Cidade, ESTADO.Sigla AS UF, Prefeito.Nome AS Prefeito
+FROM CIDADE
+LEFT JOIN PREFEITO ON CIDADE.Prefeito_ID = PREFEITO.ID
+INNER JOIN ESTADO ON Cidade.Estado_ID = ESTADO.ID;
+
+
