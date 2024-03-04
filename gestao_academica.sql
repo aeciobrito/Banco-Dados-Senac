@@ -137,3 +137,23 @@ INSERT INTO Disciplinas_Cursos(Disciplina_ID, Curso_ID) VALUES
     (3, 3),
     (4, 4),
     (5, 5);
+
+-- Inserir Disciplina Sem Professor
+INSERT INTO Disciplina (Nome, Horas) VALUES
+    ('Filosofia', 30),
+    ('Estatística', 40);
+
+-- Inserir Professor Sem Disciplina
+INSERT INTO Professor (Nome, Especializacao) VALUES
+    ('Mariana Oliveira', 'Ciências Sociais'),
+    ('Ricardo Silva', 'Matemática Pura');
+
+-- Inserir Aluno Sem Curso
+INSERT INTO Aluno (Nome, Cpf) VALUES
+    ('Amanda Pereira', '98765432109'),
+    ('Felipe Souza', '87654321098');
+
+-- Inserir Curso Sem Aluno
+INSERT INTO Curso (Nome) VALUES
+    ('Engenharia de Software'),
+    ('Gestão Ambiental');
