@@ -22,20 +22,20 @@ CREATE TABLE IF NOT EXISTS Produto(
     Quantidade INT DEFAULT 0 CHECK (Quantidade >= 0)
 );
 
-CREATE TABLE IF NOT EXISTS Pedido (
-    ID INT PRIMARY KEY AUTO_INCREMENT,
-    ClienteID INT,
-    DataPedido DATE,
-    FOREIGN KEY (ClienteID) REFERENCES Cliente(ID)
+CREATE TABLE IF NOT EXISTS pedido (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    clienteId INT NOT NULL,
+    dataPedido DATE NOT NULL,
+    FOREIGN KEY (clienteId) REFERENCES cliente (id)
 );
 
-CREATE TABLE IF NOT EXISTS ItensPedido (
-    PedidoID INT,
-    ProdutoID INT,
-    Quantidade INT,
-    PRIMARY KEY(PedidoID, ProdutoID),
-    FOREIGN KEY (PedidoID) REFERENCES Pedido(ID),
-    FOREIGN KEY (ProdutoID) REFERENCES Produto(ID)
+CREATE TABLE IF NOT EXISTS itensPedido (
+	pedidoId INT,
+    produtoId INT,
+    quantidade INT NOT NULL,
+    PRIMARY KEY (pedidoId, produtoId),
+    FOREIGN KEY (pedidoId) REFERENCES pedido(id),
+    FOREIGN KEY (produtoId) REFERENCES produto(id)
 );
 
 -- Inserção de dados na tabela Produto
