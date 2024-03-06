@@ -38,6 +38,3 @@ JOIN cliente ON pedido.clienteId = cliente.id
 GROUP BY pedido.clienteId;
 
 
-SELECT * FROM PEDIDO;
-
-
