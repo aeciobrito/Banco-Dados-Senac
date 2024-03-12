@@ -27,6 +27,7 @@ O projeto segue a estrutura abaixo, com cada aula em um diretório específico:
  - [Normalização de Dados](https://learn.microsoft.com/pt-br/office/troubleshoot/access/database-normalization-description): Demonstração de aplicação das formas normais em banco de dados.
  - [Curso SQL Softblue](https://www.youtube.com/watch?v=eULtZfAcihQ&list=PLH_lE515NYR2yvvnkx4iEfUuf-xVkTYBw): Curso disponibilizado gratuitamente pela Softblue de banco de dados com MySQL
  - [ARTIGO JOINS](https://www.alura.com.br/artigos/join-em-sql): Artigo disponibilizado pela alura com uma explicação sobre os tipos de joins.
+ - [Artigo ACID](https://www.databricks.com/br/glossary/acid-transactions): Artigo sobre o acronimo ACID em banco de dados.
 
 **Aécio Mendes Brito**
 
